@@ -1,0 +1,5 @@
+C:\Dev\DotNet\DrieLagenEmployees\DrieLagenEmployeesBusiness\bin\Debug\DrieLagenEmployeesBusiness.dll
+C:\Dev\DotNet\DrieLagenEmployees\DrieLagenEmployeesBusiness\bin\Debug\DrieLagenEmployeesBusiness.pdb
+C:\Dev\DotNet\DrieLagenEmployees\DrieLagenEmployeesBusiness\obj\Debug\DrieLagenEmployeesBusiness.csprojResolveAssemblyReference.cache
+C:\Dev\DotNet\DrieLagenEmployees\DrieLagenEmployeesBusiness\obj\Debug\DrieLagenEmployeesBusiness.dll
+C:\Dev\DotNet\DrieLagenEmployees\DrieLagenEmployeesBusiness\obj\Debug\DrieLagenEmployeesBusiness.pdb

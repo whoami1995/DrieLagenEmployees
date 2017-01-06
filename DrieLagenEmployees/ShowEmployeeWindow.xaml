@@ -1,0 +1,30 @@
+﻿<Window x:Class="DrieLagenEmployees.ShowEmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DrieLagenEmployees"
+        mc:Ignorable="d"
+        Title="Employees" Height="332.915" Width="658.307">
+    <Grid>
+        <Label x:Name="employeeNumberLabel" Content="Employee ID" HorizontalAlignment="Left" Margin="25,30,0,0" VerticalAlignment="Top" Width="138"/>
+        <Label x:Name="employeeFirstNameLabel" Content="Employee First Name" HorizontalAlignment="Left" Margin="25,82,0,0" VerticalAlignment="Top" Width="138"/>
+        <Label x:Name="employeeLastNameLabel" Content="Employee Last Name" HorizontalAlignment="Left" Margin="25,134,0,0" VerticalAlignment="Top" Width="138"/>
+        <Label x:Name="employeeGenderLabel" Content="Employee Gender" HorizontalAlignment="Left" Margin="25,200,0,0" VerticalAlignment="Top" Width="138"/>
+        <Label x:Name="employeeBirthdayLabel" Content="Employee Birthday" HorizontalAlignment="Left" Margin="379,25,0,0" VerticalAlignment="Top" Width="138"/>
+        <Label x:Name="employeeHireDate" Content="Employee Hire Date" HorizontalAlignment="Left" Margin="379,134,0,0" VerticalAlignment="Top" Width="138"/>
+        <TextBlock x:Name="employeeIdTextBlock"  HorizontalAlignment="Left" Margin="203,30,0,0" TextWrapping="Wrap" Text="{Binding Path=emp_no}" VerticalAlignment="Top" Width="117" Height="21"/>
+        <TextBlock x:Name="employeeFirstNameTextBlock" HorizontalAlignment="Left" Margin="203,82,0,0" TextWrapping="Wrap" Text="{Binding Path=first_name}" VerticalAlignment="Top" Width="117" Height="21"/>
+        <TextBlock x:Name="employeeLastNameTextBlock" HorizontalAlignment="Left" Margin="203,134,0,0" TextWrapping="Wrap" Text="{Binding Path=last_name}" VerticalAlignment="Top" Width="117" Height="21"/>
+        <ComboBox x:Name="employeeGenderCombobox" HorizontalAlignment="Left" Margin="203,200,0,0" VerticalAlignment="Top" Width="101">
+            <ComboBoxItem Name="maleComboBoxItem" Content="Male"/>
+            <ComboBoxItem Name="femaleComboBoxItem" Content="Female"/>
+        </ComboBox>
+        <DatePicker Name="employeeBirthdayDatePicker" HorizontalAlignment="Left" Margin="379,56,0,0" VerticalAlignment="Top" Width="222" SelectedDate="{Binding Path=birth_date}"/>
+        <DatePicker Name="employeeHiredayDatePicker" HorizontalAlignment="Left" Margin="379,165,0,0" VerticalAlignment="Top" Width="222" SelectedDate="{Binding Path=hire_date}"/>
+        <Button x:Name="PreviousButton" Content="Previous" HorizontalAlignment="Left" Margin="25,272,0,0" VerticalAlignment="Top" Width="147" Click="PreviousButton_Click"/>
+        <Button x:Name="NextButton" Content="Next" HorizontalAlignment="Left" Margin="191,272,0,0" VerticalAlignment="Top" Width="147" Click="NextButton_Click"/>
+        <Button x:Name="EditButton" Content="Edit" HorizontalAlignment="Left" Margin="352,272,0,0" VerticalAlignment="Top" Width="147" Click="EditButton_Click"/>
+        <Button x:Name="DeleteButton" Content="Delete" HorizontalAlignment="Left" Margin="515,272,0,0" VerticalAlignment="Top" Width="125" Click="DeleteButton_Click"/>
+    </Grid>
+</Window>

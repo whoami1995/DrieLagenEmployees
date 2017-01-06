@@ -1,0 +1,28 @@
+﻿<Window x:Class="DrieLagenEmployees.AddEmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DrieLagenEmployees"
+        mc:Ignorable="d"
+        Title="Add Employee" Height="348.903" Width="732.602">
+    <Grid>
+        <Label x:Name="employeeFirstNameLabel" Content="Employee First Name" HorizontalAlignment="Left" Margin="27,80,0,0" VerticalAlignment="Top" Width="138"/>
+        <Label x:Name="employeeLastNameLabel" Content="Employee Last Name" HorizontalAlignment="Left" Margin="27,119,0,0" VerticalAlignment="Top" Width="138"/>
+        <Label x:Name="employeeGenderLabel" Content="Employee Gender" HorizontalAlignment="Left" Margin="27,171,0,0" VerticalAlignment="Top" Width="138"/>
+        <Label x:Name="employeeBirthdayLabel" Content="Employee Birthday" HorizontalAlignment="Left" Margin="427,41,0,0" VerticalAlignment="Top" Width="138"/>
+        <Label x:Name="employeeHireDateLabel" Content="Employee Hire Date" HorizontalAlignment="Left" Margin="427,173,0,0" VerticalAlignment="Top" Width="138"/>
+        <TextBox x:Name="employeeFirstNameTextBox" HorizontalAlignment="Left" Height="23" Margin="248,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="employeeLastNameTextBox" HorizontalAlignment="Left" Height="23" Margin="248,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="employeeGenderComboBox" HorizontalAlignment="Left" Margin="248,171,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Name="maleComboBoxItem" Content="Male"/>
+            <ComboBoxItem Name="femaleComboBoxItem" Content="Female"/>
+        </ComboBox>
+        <DatePicker Name="employeeBirthdayDatePicker" HorizontalAlignment="Left" Margin="427,72,0,0" VerticalAlignment="Top" Width="205"/>
+        <DatePicker Name="employeeHireDateDatePicker" HorizontalAlignment="Left" Margin="427,199,0,0" VerticalAlignment="Top" Width="205"/>
+        <Button x:Name="addEmployeeButton" Content="Add Employee" HorizontalAlignment="Left" Margin="36,288,0,0" VerticalAlignment="Top" Width="103" Click="addEmployeeButton_Click"/>
+        <Button x:Name="clearBoxesButton" Content="Clear Content" HorizontalAlignment="Left" Margin="162,288,0,0" VerticalAlignment="Top" Width="103" Click="clearBoxesButton_Click"/>
+        <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Left" Margin="612,288,0,0" VerticalAlignment="Top" Width="103" Click="exitButton_Click"/>
+
+    </Grid>
+</Window>
